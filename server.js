@@ -5,7 +5,7 @@ const cors = require("cors");
 // Import Sequelize instance
 const database = require('./database/database');
 
-const PORT = 5555 || process.env.PORT;
+const PORT = process.env.PORT || 5555;
 
 app.use(express.json());
 app.use(cors());
